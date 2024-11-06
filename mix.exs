@@ -27,7 +27,8 @@ defmodule Ratatouille.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_termbox, "~> 1.0"},
+      {:ex_termbox, git: "https://github.com/MarcMonchablon/ex_termbox", branch: "forked-termbox", submodules: true},
+      # {:ex_termbox, "~> 1.0"},
       {:asciichart, "~> 1.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:dialyze, "~> 0.2.0", only: :dev},
